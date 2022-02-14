@@ -1,0 +1,14 @@
+.choice_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.placeholder {
+  height: 100px;
+  background-color: pink;
+  border-radius: 25px;
+}
+
+.choice_content {
+    flex-direction: row;
+}
