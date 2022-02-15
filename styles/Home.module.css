@@ -1,6 +1,6 @@
-.container {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-  color: white;
+.title_container {
+    border-radius: 0 0 25px 25px;
+    background-color: aquamarine;
+    min-height: 300px;
+    max-height: 40vh;
 }

@@ -1,8 +1,10 @@
 import Link from "next/link";
 
+import styles from "../../../styles/Navbar.module.css";
+
 const Navbar = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <Link href="/">
         <a>CHAUY ICON</a>
       </Link>

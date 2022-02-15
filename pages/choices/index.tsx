@@ -6,9 +6,9 @@ import { getAllPosts } from "../../lib/api";
 
 const ExamplePost = ({ post: { title, body } }: any) => {
   return (
-    <div className={styles.choice_container}>
+    <div className={styles.container}>
       <div className={styles.placeholder}></div>
-      <div>
+      <div className={styles.content}>
         <h2>{title}</h2>
         <p>{body}</p>
       </div>
@@ -22,7 +22,7 @@ const Choices = ({ posts }: any) => {
       <Head>
         <title>Choices</title>
       </Head>
-      <div>
+      <div className={styles.container}>
         {posts.map((post: any) => (
           <ExamplePost post={post} />
         ))}
@@ -31,7 +31,7 @@ const Choices = ({ posts }: any) => {
   );
 };
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const posts = await getAllPosts();
 
   return {
