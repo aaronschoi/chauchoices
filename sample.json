@@ -1,0 +1,47 @@
+[
+    {
+        "postID" : "number",
+        "title" : "string",
+        "headline" : "string",
+        "description" : "string",
+        "address" : "string",
+        "ratings" : {
+            "tables" : "number",
+            "chairs" : "number",
+            "lighting" : "number",
+            "sound" : "number",
+            "smell" : "number",
+            "outlets" : "number",
+            "bathroom" : "number"
+        },
+        "outlets" : {
+            "quantity" : "number" 
+        },
+        "food" : {
+            "availability" : "string"
+        },
+        "tables" : {
+            "size" : {
+                "height" : "number",
+                "width" : "number",
+                "shape" : "string"
+            },
+            "quality" : "string",
+            "quantity" : "number"
+        },
+        "chairs" : {
+            "size" : {
+                "height" : "number",
+                "width" : "number"
+            },
+            "quality" : "string",
+            "quanity" : "number"
+        },
+        "ambience" : {
+            "quality" : "string"
+        },
+        "cost" : {
+            "quality" : "string"
+        }
+    }
+]
