@@ -42,7 +42,8 @@ export interface IPost {
         quality : string
     },
     cost : {
-        quality : string
+        item : string,
+        price : number
     }
 }
 

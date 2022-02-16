@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         </div>
         <div>
           <div>
-            About Us: Dis me. Dis also me. We do duh chauy ratings.
+            Abou
           </div>
         </div>
     </>

@@ -1,47 +1,140 @@
 [
     {
-        "postID" : "number",
-        "title" : "string",
-        "headline" : "string",
-        "description" : "string",
-        "address" : "string",
+        "postID" : 0,
+        "title" : "Sample Post 1",
+        "headline" : "Nice Bathroom",
+        "description" : "Is a starbucks. Yes.",
+        "address" : "1234 Starbuck Ave",
         "ratings" : {
-            "tables" : "number",
-            "chairs" : "number",
-            "lighting" : "number",
-            "sound" : "number",
-            "smell" : "number",
-            "outlets" : "number",
-            "bathroom" : "number"
+            "tables" : 5,
+            "chairs" : 3,
+            "lighting" : 4,
+            "sound" : 3,
+            "smell" : 5,
+            "outlets" : 2,
+            "bathroom" : 3
         },
         "outlets" : {
-            "quantity" : "number" 
+            "quantity" : 3000 
         },
         "food" : {
-            "availability" : "string"
+            "availability" : "sandwiches"
         },
         "tables" : {
             "size" : {
-                "height" : "number",
-                "width" : "number",
-                "shape" : "string"
+                "height" : 300,
+                "width" : 300,
+                "shape" : "square"
             },
-            "quality" : "string",
-            "quantity" : "number"
+            "quality" : "Great",
+            "quantity" : 20
         },
         "chairs" : {
             "size" : {
-                "height" : "number",
-                "width" : "number"
+                "height" : 10,
+                "width" : 10
             },
-            "quality" : "string",
-            "quanity" : "number"
+            "quality" : "soft and fluffy",
+            "quanity" : 4000
         },
         "ambience" : {
-            "quality" : "string"
+            "quality" : "Strange music, loud homeless people"
         },
         "cost" : {
-            "quality" : "string"
+            "item" : "coffee",
+            "price" : 300
+        }
+    },
+    {
+        "postID" : 1,
+        "title" : "Sample Post 2",
+        "headline" : "Nice Bathroom",
+        "description" : "Is a starbucks. Yes.",
+        "address" : "1234 Starbuck Ave",
+        "ratings" : {
+            "tables" : 5,
+            "chairs" : 3,
+            "lighting" : 4,
+            "sound" : 3,
+            "smell" : 5,
+            "outlets" : 2,
+            "bathroom" : 3
+        },
+        "outlets" : {
+            "quantity" : 3000 
+        },
+        "food" : {
+            "availability" : "sandwiches"
+        },
+        "tables" : {
+            "size" : {
+                "height" : 300,
+                "width" : 300,
+                "shape" : "square"
+            },
+            "quality" : "Great",
+            "quantity" : 20
+        },
+        "chairs" : {
+            "size" : {
+                "height" : 10,
+                "width" : 10
+            },
+            "quality" : "soft and fluffy",
+            "quanity" : 4000
+        },
+        "ambience" : {
+            "quality" : "Strange music, loud homeless people"
+        },
+        "cost" : {
+            "item" : "coffee",
+            "price" : 300
+        }
+    },
+    {
+        "postID" : 2,
+        "title" : "Sample Post 3",
+        "headline" : "Nice Bathroom",
+        "description" : "Is a starbucks. Yes.",
+        "address" : "1234 Starbuck Ave",
+        "ratings" : {
+            "tables" : 5,
+            "chairs" : 3,
+            "lighting" : 4,
+            "sound" : 3,
+            "smell" : 5,
+            "outlets" : 2,
+            "bathroom" : 3
+        },
+        "outlets" : {
+            "quantity" : 3000 
+        },
+        "food" : {
+            "availability" : "sandwiches"
+        },
+        "tables" : {
+            "size" : {
+                "height" : 300,
+                "width" : 300,
+                "shape" : "square"
+            },
+            "quality" : "Great",
+            "quantity" : 20
+        },
+        "chairs" : {
+            "size" : {
+                "height" : 10,
+                "width" : 10
+            },
+            "quality" : "soft and fluffy",
+            "quanity" : 4000
+        },
+        "ambience" : {
+            "quality" : "Strange music, loud homeless people"
+        },
+        "cost" : {
+            "item" : "coffee",
+            "price" : 300
         }
     }
 ]
