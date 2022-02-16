@@ -7,7 +7,6 @@ import { getAllPosts } from "../../lib/api";
 const ExamplePost = ({ post: { title, body } }: any) => {
   return (
     <div className={styles.container}>
-      <div className={styles.placeholder}></div>
       <div className={styles.content}>
         <h2>{title}</h2>
         <p>{body}</p>
