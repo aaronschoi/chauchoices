@@ -4,12 +4,32 @@ import styles from "../../styles/Choices.module.css";
 
 import { getAllPosts } from "../../lib/api";
 
-const ExamplePost = ({ post: { title, body } }: any) => {
+import { IPost } from "../../types/apiTypes";
+
+interface IPostProp {
+  post: IPost;
+}
+
+const ExamplePost = ({
+  post: {
+    title,
+    description,
+    headline,
+    address,
+    ratings,
+    outlets,
+    food,
+    tables,
+    chairs,
+    ambience,
+    cost,
+  },
+}: IPostProp) => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
         <h2>{title}</h2>
-        <p>{body}</p>
+        <p>{description}</p>
       </div>
     </div>
   );

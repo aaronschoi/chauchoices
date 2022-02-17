@@ -1,6 +1,4 @@
-const API_URL: string =
-  // process.env.WP_API_URL || 
-  "https://jsonplaceholder.typicode.com/posts";
+const API_URL : string = process.env.MAIN_URL || "none";
 
 async function fetchAPI() {
   const res = await fetch(API_URL);

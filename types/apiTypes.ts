@@ -2,6 +2,7 @@ type TRating = 1 | 2 | 3 | 4 | 5
 
 export interface IPost {
     postID : number,
+    image: string,
     title : string,
     headline : string,
     description : string,
