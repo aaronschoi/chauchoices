@@ -4,7 +4,7 @@ export interface ISlug {
   slug: string;
   image: string;
   title: string;
-  blurb: string;
+  blurb: string;"backgroundColor": "white",
 }
 
 export interface IPost {

@@ -1,8 +1,20 @@
 [
-    {
-        "slug" : "string",
-        "image" : "string",
-        "title" : "string",
-        "blurb" : "string"
-    }
+  {
+    "slug": "post-1",
+    "image": "",
+    "title": "Post 1",
+    "blurb": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+  },
+  {
+    "slug": "post-2",
+    "image": "",
+    "title": "Post 2",
+    "blurb": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+  },
+  {
+    "slug": "post-3",
+    "image": "",
+    "title": "Post 3",
+    "blurb": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
+  }
 ]
