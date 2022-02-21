@@ -1,19 +1,15 @@
-const API_URL : string = process.env.MAIN_URL || "none";
+import { TPosts, TSlugs } from "../types/apiTypes";
 
-async function fetchAPI() {
-  const res = await fetch(API_URL);
+const SLUGS: string = process.env.SLUGS_URL || "none";
+
+export const getSlugs = async () : Promise<TSlugs> => {
+  const res = await fetch("https://0opqa2sj4b.execute-api.us-west-1.amazonaws.com/chauchoisays/");
   const json = await res.json();
   console.log(json)
 
-  //error handling
   if (json.errors) {
     console.log(json.errors);
-    throw new Error("Failed to fetch API");
+    throw new Error(`slugs failed to fetch`);
   }
   return json;
-}
-
-export async function getAllPosts() {
-  const data = await fetchAPI();
-  return data;
-}
+};

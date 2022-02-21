@@ -1,0 +1,61 @@
+[
+  {
+    "postID": 0,
+    "title": "Starbucks on Town Center",
+    "backgroundColor": "white",
+    "headline": "Spacious and Well Lit",
+    "description": "A Starbucks with plenty of seating inside and out. It is a great workspace for coding or studying.",
+    "address": "1260 N Town Center Dr, Las Vegas, NV 89144",
+    "ratings": {
+      "tables": 4,
+      "chairs": 4,
+      "lighting": 5,
+      "sound": 4,
+      "smell": 3,
+      "outlets": 4,
+      "bathroom": 5
+    },
+    "outlets": {
+      "quantity": 10
+    },
+    "food": {
+      "availability": "standard Starbucks fare"
+    },
+    "tables": {
+      "square": {
+        "size": {
+          "height": 30,
+          "width": 25,
+          "length": 25
+        },
+        "quantity": 13
+      },
+      "circle": {
+        "size": {
+          "height": 30,
+          "diameter": 40
+        },
+        "quantity": 5
+      },
+      "big": {
+        "quantity": 1
+      },
+      "quality": "Wooden tables that are not fixed in place. Great for both groups and individuals."
+    },
+    "chairs": {
+      "size": {
+        "height": 35,
+        "width": 20
+      },
+      "quality": "Most chairs are hard wood, mid-back, but there are soft cushioned benches along the front edge of the interior that give support for long work sessions.",
+      "quanity": 50
+    },
+    "ambience": {
+      "quality": "The large windows contribute to fantastic natural lighting. If you prefer to be outside, there is an outdoor area that have both shaded and non-shaded sections. The indoor lighting is comprised of bright but warm tones so there won't be any working in the dark."
+    },
+    "cost": {
+      "item": "short brewed coffee",
+      "price": 235
+    }
+  }
+]
