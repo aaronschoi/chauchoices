@@ -6,6 +6,9 @@ import { getAllPosts } from "../../lib/api";
 
 import { IPost } from "../../types/apiTypes";
 
+import { useRouter } from "next/router"
+import Link from 'next/link';
+
 interface IPostProp {
   post: IPost;
 }
@@ -25,8 +28,10 @@ const ExamplePost = ({
     cost,
   },
 }: IPostProp) => {
+  const router = useRouter();
   return (
-    <div className={styles.container}>
+    <div className={styles.choicesContainer} onClick={() => router.push('choices/ExamplePost')}>
+      <div className={styles.thumbnail}>image</div>
       <div className={styles.content}>
         <h2>{title}</h2>
         <p>{description}</p>
@@ -41,7 +46,7 @@ const Choices = ({ posts }: any) => {
       <Head>
         <title>Choices</title>
       </Head>
-      <div className={styles.container}>
+      <div className={styles.container} style={{padding: '10px'}}>
         {posts.map((post: any, idx: any) => (
           <ExamplePost post={post} key={idx}/>
         ))}

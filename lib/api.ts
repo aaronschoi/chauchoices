@@ -1,7 +1,7 @@
 const API_URL : string = process.env.MAIN_URL || "none";
 
 async function fetchAPI() {
-  const res = await fetch(API_URL+'/choices/');
+  const res = await fetch(API_URL);
   const json = await res.json();
   console.log(json)
 
