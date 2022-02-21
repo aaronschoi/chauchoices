@@ -42,8 +42,8 @@ const Choices = ({ posts }: any) => {
         <title>Choices</title>
       </Head>
       <div className={styles.container}>
-        {posts.map((post: any) => (
-          <ExamplePost post={post} />
+        {posts.map((post: any, idx: any) => (
+          <ExamplePost post={post} key={idx}/>
         ))}
       </div>
     </>
