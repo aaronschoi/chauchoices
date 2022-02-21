@@ -40,7 +40,9 @@ const Choices = ({ posts }: any) => {
         <title>Choices</title>
       </Head>
       <div className={styles.container}>
-        <img src="https://0opqa2sj4b.execute-api.us-west-1.amazonaws.com/chauchoisays/logos/starbucks.png" />
+        {posts.map((post: any, idx: any) => (
+          <ExamplePost post={post} key={idx}/>
+        ))}
       </div>
     </>
   );
