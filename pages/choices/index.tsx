@@ -2,12 +2,14 @@ import Head from "next/head";
 
 import styles from "../../styles/Choices.module.css";
 
-import { getAllPosts } from "../../lib/api";
+import { getAllPosts, getImage } from "../../lib/api";
 
 import { IPost } from "../../types/apiTypes";
 
 import { useRouter } from "next/router"
 import Link from 'next/link';
+
+import * as React from 'react';
 
 interface IPostProp {
   post: IPost;
@@ -17,6 +19,7 @@ const ExamplePost = ({
   post: {
     title,
     description,
+    image,
     headline,
     address,
     ratings,
@@ -29,9 +32,12 @@ const ExamplePost = ({
   },
 }: IPostProp) => {
   const router = useRouter();
+
   return (
-    <div className={styles.choicesContainer} onClick={() => router.push('choices/ExamplePost')}>
-      <div className={styles.thumbnail}>image</div>
+    <div className={styles.choicesContainer} onClick={() => router.push('choices/examplePost')}>
+      <div className={styles.thumbnail}>
+        <img src={`${image}.png`} alt={title}/>
+      </div>
       <div className={styles.content}>
         <h2>{title}</h2>
         <p>{description}</p>
@@ -46,7 +52,7 @@ const Choices = ({ posts }: any) => {
       <Head>
         <title>Choices</title>
       </Head>
-      <div className={styles.container} style={{padding: '10px'}}>
+      <div className={styles.container}>
         {posts.map((post: any, idx: any) => (
           <ExamplePost post={post} key={idx}/>
         ))}
