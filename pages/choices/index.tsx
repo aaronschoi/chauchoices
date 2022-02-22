@@ -1,20 +1,14 @@
 import Head from "next/head";
-
 import styles from "../../styles/Choices.module.css";
-
 import { getAllPosts, getImage } from "../../lib/api";
-
 import { IPost } from "../../types/apiTypes";
-
 import { useRouter } from "next/router"
 import Link from 'next/link';
-
 import * as React from 'react';
 
 interface IPostProp {
   post: IPost;
 }
-
 const ExamplePost = ({
   post: {
     title,
@@ -59,16 +53,6 @@ const Choices = ({ posts }: any) => {
       </div>
     </>
   );
-};
-
-export const getStaticProps = async () => {
-  const posts = await getAllPosts();
-
-  return {
-    props: {
-      posts,
-    },
-  };
 };
 
 export default Choices;

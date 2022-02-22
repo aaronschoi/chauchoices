@@ -1,4 +1,4 @@
-const API_URL : string = process.env.MAIN_URL || "none";
+import { TPosts, TSlugs } from "../types/apiTypes";
 
 async function fetchAPI() {
   try {
